@@ -1,9 +1,15 @@
-# https://docs.streamlit.io/library/get-started/create-an-app
+# Based on https://docs.streamlit.io/library/get-started/create-an-app
+# Github URL https://github.com/Sambsamb/SB_streamlit/blob/master/uberpickupexample.py
+# Streamlit URL https://sambsamb-sb-streamlit-uberpickupexample-9w4ie0.streamlitapp.com/
 import streamlit as st
 import pandas as pd
 import numpy as np
 
 st.title('Uber pickups in NYC')
+st.txt('Sam Boutros')
+st.txt('FHSU - Fall 2022 - INF601 Advanced Python')
+st.txt('Prof. Jason Zeller')
+st.txt('Week 6 - Streamlit practice')
 
 DATE_COLUMN = 'date/time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
