@@ -6,10 +6,10 @@ import pandas as pd
 import numpy as np
 
 st.title('Uber pickups in NYC')
-code = ''''FHSU - Fall 2022 - INF601 Advanced Python'
-    'Sam Boutros'    
-    'Prof. Jason Zeller'
-    'Week 6 - Streamlit practice'
+code = '''FHSU - Fall 2022 - INF601 Advanced Python
+    Sam Boutros
+    Prof. Jason Zeller
+    Week 6 - Streamlit practice
     '''
 st.code(code, language='python')
 
