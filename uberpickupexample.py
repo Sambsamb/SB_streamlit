@@ -6,10 +6,12 @@ import pandas as pd
 import numpy as np
 
 st.title('Uber pickups in NYC')
-'Sam Boutros'
-st.text('FHSU - Fall 2022 - INF601 Advanced Python')
-st.write('Prof. Jason Zeller')
-st.text('Week 6 - Streamlit practice')
+code = ''''FHSU - Fall 2022 - INF601 Advanced Python'
+    'Sam Boutros'    
+    'Prof. Jason Zeller'
+    'Week 6 - Streamlit practice'
+    '''
+st.code(code, language='python')
 
 DATE_COLUMN = 'date/time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
@@ -26,7 +28,7 @@ def load_data(nrows):
 # Create a text element and let the website user know the data is loading.
 data_load_state = st.text('Loading data...')
 data = load_data(10000)  # Load 10,000 rows of data into the dataframe.
-data_load_state.text("Done! (using st.cache)")  # Notify the user that the data was successfully loaded.
+data_load_state.text("Done loading data! (using st.cache)")  # Notify the user that the data was successfully loaded.
 
 # Inspect the raw data
 if st.checkbox('Show raw data'):
