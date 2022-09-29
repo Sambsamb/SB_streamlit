@@ -6,9 +6,9 @@ import pandas as pd
 import numpy as np
 
 st.title('Uber pickups in NYC')
-st.text('Sam Boutros')
+'Sam Boutros'
 st.text('FHSU - Fall 2022 - INF601 Advanced Python')
-st.text('Prof. Jason Zeller')
+st.write('Prof. Jason Zeller')
 st.text('Week 6 - Streamlit practice')
 
 DATE_COLUMN = 'date/time'
